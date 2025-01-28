@@ -2,7 +2,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain import hub
 
 
-def Code_Generator_prompt():
+def code_generator_prompt():
     """
     Generates Prompt template from the LangSmith prompt hub
     Returns:

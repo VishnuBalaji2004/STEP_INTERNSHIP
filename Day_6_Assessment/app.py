@@ -4,7 +4,7 @@ import chain
 
 load_dotenv()
 
-def Code_Generator():
+def code_generator():
     """
     Code Generator Bot
     """
@@ -14,8 +14,8 @@ def Code_Generator():
         problem_statement = st.text_input("Enter the Problem Statement")
         submitted = st.form_submit_button("submit",type="primary")
         if(submitted):
-            response =chain.Generate_code(language,problem_statement)
+            response =chain.generate_code(language,problem_statement)
             st.info(response)
 
-Code_Generator()
+code_generator()
 

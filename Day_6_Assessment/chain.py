@@ -1,7 +1,7 @@
 from model import create_chat_gorq
-from prompt import Code_Generator_prompt
+from prompt import code_generator_prompt
 
-def Generate_code(language,problem_statement):
+def generate_code(language,problem_statement):
     """
     Function to initialize chat gorq
     Args:
@@ -10,7 +10,7 @@ def Generate_code(language,problem_statement):
     Returns:
         response.content (str) - generated code as a response
     """
-    prompt_template = Code_Generator_prompt()
+    prompt_template = code_generator_prompt()
     llm =create_chat_gorq()
     
     chain = prompt_template | llm
